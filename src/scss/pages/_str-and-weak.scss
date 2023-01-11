@@ -1,0 +1,59 @@
+.str-and-weak {
+  background-color: rgba(57, 57, 60, 0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 45px;
+  position: relative;
+  &__top-square {
+    width: 30px;
+    height: 30px;
+    background-color: $color-white;
+    position: absolute;
+    bottom: 97.4%;
+    transform: rotate(45deg);
+  }
+  &__container {
+    text-align: center;
+    margin: 0% 5%;
+    padding: 0% 5%;
+  }
+  &__title {
+    color: $color-blue-green;
+    font-size: 2.2rem;
+    font-family: $font-familyRubik;
+    font-weight: 500;
+    line-height: 2.05;
+    margin-top: 30px;
+  }
+  &__p {
+    color: $color-gunmetal;
+    font-family: $font-familyOpenSans;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    top: 0;
+    padding: 0% 5% 7.8% 5%;
+    &__container {
+      padding: 0;
+      margin: 0%;
+    }
+    &__title {
+      margin-bottom: 4.9%;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    padding: 3.8% 11.5% 5% 11.5%;
+    &__container {
+      padding: 0% 3% 0% 3%;
+    }
+    &__title {
+      margin-bottom: 3%;
+      margin-top: 0%;
+    }
+  }
+}
